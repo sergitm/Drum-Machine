@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+  margin: 50px;
+}
+
+.drum {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 50px auto;
+  width: min-content;
+}
+
+.drum-pad {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #2f2f2f;
+  border-radius: 10px;
+  background-color: #3f3f3f;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.drum-pad:active{
+  transform: translate(4px, 4px);
+  box-shadow: none;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+.drum-pad.active{
+  transform: translate(4px, 4px);
+  box-shadow: none;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  outline: none;
+}
+
+.drum-pad:focus{
+  outline: none;
+}
